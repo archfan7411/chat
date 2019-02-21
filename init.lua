@@ -19,13 +19,3 @@ minetest.register_chatcommand("chat", {
         minetest.display_chat_message("Current prefix: " .. prefix)
     end,
 })
-minetest.register_chatcommand("chatstat", {
-    description = "Get the current command you are piping messages through.",
-    func = function(_)
-        if not param or param == "" then
-            minetest.display_chat_message("You are not piping messages through any command.")
-        else
-            minetest.display_chat_message("You are piping messages through " .. prefix .. "\nFor example, if you chat 'Hello there', ''"..prefix.." Hello there' will be sent.")
-        end
-    end
-})
