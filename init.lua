@@ -26,4 +26,4 @@ minetest.register_chatcommand("chat", {
         prefix = string.trim(param) or ""
         minetest.display_chat_message(minetest.colorize("#00ff00", "Current prefix: "..prefix.."\nIf you type 'Hello there', '"..prefix.." Hello there' will be sent."))
     end,
-          
+})
