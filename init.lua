@@ -3,7 +3,7 @@ function string.startswith(str, sub)
 end
 
 local prefix = ""
-minetest.register_on_sending_chat_messages(function(message)
+minetest.register_on_sending_chat_message(function(message)
     if prefix then 
         if message and not string.startswith(message, "/") and not string.startswith(message, ".") then
             local realprefix = prefix .. " "
